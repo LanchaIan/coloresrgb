@@ -18,8 +18,8 @@ function cambiar(){
          data[tmp[0]] = tmp[1];
     }
     foto = data.name;
-    foto = "imagenes/" + foto + ".jpg";
-    document.getElementById("imagen").src=foto;
+    color = "imagenes/" + foto + ".jpg";
+    document.body.style.background = color;
 }
 
 function cambiar_color(){
@@ -27,7 +27,27 @@ function cambiar_color(){
 
 }
 
+function fondo(){
+    cambio = document.getElementById("cambio").value;
+
+}
+
+function letras(){
+    cambio = document.getElementById("cambio").value;
+
+}
+
+function enlaces(){
+    cambio = document.getElementById("cambio").value;
+
+}
+
+function mod_url(html_name){
+    url = html_name + '.html';
+    ventana1 = window.open(url, "Imagen completa", "directories=no, location=no, menubar=no, scrollbars=no, statusbar=no, tittlebar=no");
+}
+
 function mod_url(foto){
-    url = foto + '.html';
+    url = 'coloresRGB.html?name=' + encodeURIComponent(foto);
     ventana1 = window.open(url, "Imagen completa", "directories=no, location=no, menubar=no, scrollbars=no, statusbar=no, tittlebar=no");
 }
