@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(158, 228, 204);
+}
+
+.boton{
+    position: relative;
+    margin-left: 1%;
+    height: 80px;
+    width: 430px;
+    background-color: white;
+}
+div{
+    text-align: center;
+}
